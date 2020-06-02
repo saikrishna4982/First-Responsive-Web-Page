@@ -1,0 +1,197 @@
+/* We are styling body section */
+body{
+	font: 15px/1.5 Arial, Helevtica, sans-serif;
+	padding: 0;
+	margin:0;
+	background-color: #adaaaa;
+}
+/*Global*/
+.container{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+/* Applicable to all ul tags*/
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+/* Styling for class button_1 */
+.button_1{
+	height: 38px;
+	background:#123c69;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* Styling for class dark for side bar*/
+.dark{
+	padding: 15px;
+	background-color: #fbeec1;
+	color:black;											
+	margin-bottom: 10px;
+}
+/*header is the first part of page styling header*/
+header{
+	background-color: #bab2b5;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #ffe799 3px solid;
+}
+/* A tags or anchor tags are generally blue coloured underlined so i'm making them to look more bueatiful*/
+header a{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/*settting the style for list items item in header*/
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+/* Setting style for logo or name of the page */
+header #name
+{
+	float: left;
+}
+/*Setting style for h1 tag in header of id id name*/
+header #name h1{
+	margin: 0;
+}
+/*Styling navigation menu */
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+/* highliting some part of main name, and active state of  a tag*/
+header .highlight, header .current a{
+  color:#FF0000;
+  font-weight:bold;
+}
+/*styling for a tag when hovered */
+header a:hover{
+  color:blue;
+  font-weight:bold;
+}
+/* Styling showcase by using images and adding information*/
+#showcase{
+  min-height:400px;
+  background:url('../images/showcase.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+#shocase p{
+	font-size: 30px;
+}
+/* styling newsletter */
+#newsletter{
+	padding: 15px;
+	color: #ffffff;
+	background-color: #e27d60;
+}
+#newsletter h1{
+	color: black;
+	float: left;
+}
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+#newsletter input[type="email"]{
+padding: 4px;
+height: 25px;
+width: 250px;
+}
+/* Styling how boxes should be displayed*/
+#boxes
+{
+	margin-top: 20px;
+}
+#boxes .box
+{
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+
+}
+#boxes .box img{
+	width: 100px;
+}
+/* Side bar*/
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:20px;
+}
+/* main -col1*/
+article#main-col1{
+  float:left;
+  width:65%;
+}
+/* styling li(list) of ul of Services id ie services.html*/
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+/* styling aside look of services*/
+aside#sidebar .Contact input, aside#sidebar .Contact textarea{
+  width:90%;
+  padding:5px;
+}
+/* Styling how footer should be displayed */
+footer{
+	padding: 20px;
+	color: white;
+	background: #e8491d;
+	text-align: center;
+}
+/* media queris are used when we want to fix something generally when we want to make page responsive*/
+@media(max-width:700px)
+{
+	/*styling how to display header and other selectors when width is 700px*/
+	header #name,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col1,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:90%;
+  }
+
+  header{
+    padding-bottom:10px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+    margin-bottom: 35px;
+  }
+
+  #newsletter button, .Contact button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .Contact input, .Contact textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+}
